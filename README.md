@@ -46,5 +46,8 @@ The extension also provides quick definitions for highlighted words on any webpa
 - The preview window only works on links that contain `http` or `https` in the URL.
 - Some websites might restrict loading in iframes due to security policies, in which case the preview window will not display the content.
 
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 
