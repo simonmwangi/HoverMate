@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "Hover Mate",
+    "version": "1.0",
+    "description": "Get the meaning of any word on a website by highlighting it",
+    "permissions": ["tabs","activeTab", "contextMenus", "scripting"],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "images/icon_16x16.png",
+        "48": "images/icon_48x48.png",
+        "128": "images/icon_128x128.png"
+      }
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ],
+    "background": {
+      "service_worker": "background.js"
+    }
+  }
